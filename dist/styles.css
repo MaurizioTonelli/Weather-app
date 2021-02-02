@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    height: 35%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+.search-box form{
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box .autocomplete{
+    width: 40%;
+    position: relative;
+    display: inline-block;
+}
+.search-box input[type=text], input[type=submit]{
+    height: 15%;
+    border: none;
+}
+.search-box input[type=text]{
+    width: 100%;
+    margin-right: 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.search-box input[type=submit]{
+    width: 10%;
+    background-color: rgb(77, 97, 139);
+    color: white;
+}
+.search-box input[type=submit]:hover{
+    background-color: rgb(115, 142, 201);
+    cursor: pointer;
+}
+.search-box:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: 1;
+    background: url('img/landscape4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.9;
+}
+.autocomplete-items{
+    position: absolute;
+    background-color: rgba(116, 116, 116, 0.267);
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover{
+    background-color: #e9e9e9;
+}
+.autocomplete-active{
+    background-color: dodgerblue;
+    color: #ffffff;
+}
+
+.result-box{
+    background-color: rgb(209, 171, 141);
+    height: 45%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result-card{
+    background-color: rgba(87, 73, 73, 0.774);
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature{
+    font-size: 6em;
+    width: 80%;
+    font-weight: bold;
+    background-color: rgba(73, 21, 13, 0.192);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
