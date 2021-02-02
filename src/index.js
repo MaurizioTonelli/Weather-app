@@ -103,7 +103,7 @@ function getCityId(city) {
 }
 async function fillCityData(id) {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=31aacefbb663efad6c58dd73c8163725&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=31aacefbb663efad6c58dd73c8163725&units=metric`
   );
   const resultDiv = document.querySelector(".result-box");
   resultDiv.innerHTML = "";
