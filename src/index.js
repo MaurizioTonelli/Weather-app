@@ -137,7 +137,7 @@ async function fillCityData(id) {
   const temperatureSpan = document.createElement("span");
   temperatureSpan.textContent = `${temperature}°C`;
   const imageIcon = document.createElement("img");
-  imageIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+  imageIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
   temperatureDiv.appendChild(temperatureSpan);
   temperatureDiv.appendChild(imageIcon);
   cardDiv.appendChild(cityH1);
